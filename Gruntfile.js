@@ -33,6 +33,16 @@ module.exports = function(grunt) {
           'build/imgly.js'
         ],
         dest: 'build/imgly.concat.js'
+      },
+      newscred: {
+        src: [
+          'javascripts/vendor/perf.js',
+          'javascripts/vendor/resize.js',
+          'javascripts/vendor/modernizr.js',
+          'javascripts/vendor/spectrum-min.js',
+          'build/imgly.js'
+        ],
+        dest: 'build/imgly.concat.js'
       }
     },
 
