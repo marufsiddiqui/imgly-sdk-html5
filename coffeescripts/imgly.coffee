@@ -70,7 +70,10 @@ class ImglyKit
     @returns {String} assets file path
   ###
   buildAssetsPath: (path) ->
-    return @options.assetsPath + "/" + path
+    if path.match(/^(ht|f)tps?:\/\/[a-z0-9-\.]+\.[a-z]{2,4}\/?([^\s<>\#%"\,\{\}\\|\\\^\[\]`]+)?$/)
+      return path;
+    else
+      return @options.assetsPath + "/" + path
 
   ###
     @param {Image|String} image Data URL or Image object
