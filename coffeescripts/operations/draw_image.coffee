@@ -19,7 +19,7 @@ module.exports = class DrawImageOperation extends Operation
     # There is an architectural problem that needs refactoring in the future,
     # but for now we have to store the initial sticker image and the canvas
     # size in the operation.
-    @options.sticker = "stickers/sticker-glasses-nerd.png"
+    @options.sticker = "stickers/sticker-star.png"
     @options.widthRange = 570
     @options.heightRange = 427
     

@@ -161,7 +161,15 @@ class UIControlsStickers extends List
     ]
 
     if @app.options.additionalStickers?
-      @listItems = []
+      @listItems = [
+        name: "Star"
+        cssClass: "sticker-star"
+        method: "useSticker"
+        arguments: ["stickers/sticker-star.png"]
+        pixmap: "stickers/sticker-star.png"
+        tooltip: "Star",
+        default: true
+      ]
       for additionalSticker in @app.options.additionalStickers
         @listItems.push
           external: additionalSticker.external
